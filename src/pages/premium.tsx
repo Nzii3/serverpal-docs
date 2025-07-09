@@ -44,7 +44,7 @@ function Community() {
                   </ul>
                 </div>
                 <div className="card__footer">
-                  <Link to="https://buy.stripe.com/4gM8wQbm33OMcupapObjW00" className="button button--outline button--primary button--block">Subscribe</Link>
+                  <Link to="https://buy.stripe.com/dRm7sM4XFdpm0LHdC0bjW06" className="button button--outline button--primary button--block">Subscribe</Link>
                 </div>
               </div>
             </div>
