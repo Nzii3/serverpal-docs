@@ -31,7 +31,6 @@ module.exports = {
         autoCollapseCategories: true,
       },
     },
-    image: '',
     metadata: [
       {name: 'keywords', content: 'discord bot, utility bot, discord moderation bot, discord multipurpose bot'},
       {name: 'twitter:card', content: 'summary_large_image'},
