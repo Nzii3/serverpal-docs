@@ -4,7 +4,7 @@ title: 🕒 Time Arguments
 
 import { DiscordTime, DiscordBold, DiscordItalic, DiscordUnderlined, DiscordInlineCode, DiscordSpoiler, DiscordQuote, DiscordActionRow, DiscordAttachment, DiscordAttachments, DiscordButton, DiscordCommand, DiscordEmbed, DiscordEmbedField, DiscordEmbedFields, DiscordEmbedDescription, DiscordEmbedFooter, DiscordInvite, DiscordMention, DiscordMessage, DiscordMessages, DiscordReaction, DiscordReactions, DiscordReply, DiscordSystemMessage, DiscordTenorVideo, DiscordThread, DiscordThreadMessage, DiscordCustomEmoji } from "@skyra/discord-components-react";
 
-Need help with Sentry's **time arguments (`?t` flag)** in commands? Then this is the guide for you!
+Need help with ServerPal's **time arguments (`?t` flag)** in commands? Then this is the guide for you!
 
 ## Breakdown
 Key | Example | Output

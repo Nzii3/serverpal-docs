@@ -1,7 +1,7 @@
 ---
 title: 👑 Team
 sidebar_position: 2
-description: Welcome to our staff team page, where we take pride in introducing the individuals who make up the backbone of our team managing Sentry. Our team comprises passionate and skilled professionals, each contributing their unique talents to drive our collective success.
+description: Welcome to our staff team page, where we take pride in introducing the individuals who make up the backbone of our team managing ServerPal. Our team comprises passionate and skilled professionals, each contributing their unique talents to drive our collective success.
 ---
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -8,9 +8,9 @@ import { DiscordTime, DiscordBold, DiscordCode, DiscordItalic, DiscordUnderlined
 
 # Modmail
 
-Introducing **Sentry's innovative public modmail system** – a dynamic feature that facilitates user interaction with server moderators through a seamlessly integrated platform within Sentry's direct messages on Discord. This system is not just a breakthrough in user engagement; it also boasts Discord's newest and most advanced user interface, ensuring a visually pleasing and intuitive experience.
+Introducing **ServerPal's innovative public modmail system** – a dynamic feature that facilitates user interaction with server moderators through a seamlessly integrated platform within ServerPal's direct messages on Discord. This system is not just a breakthrough in user engagement; it also boasts Discord's newest and most advanced user interface, ensuring a visually pleasing and intuitive experience.
 
-What sets Sentry's Modmail System apart is its commitment to providing a support solution that is both reliable and customizable. Users can expect a dependable support experience with features that can be tailored to meet the unique needs of each server or community. This level of flexibility ensures that server moderators can efficiently manage and address user queries, issues, and feedback.
+What sets ServerPal's Modmail System apart is its commitment to providing a support solution that is both reliable and customizable. Users can expect a dependable support experience with features that can be tailored to meet the unique needs of each server or community. This level of flexibility ensures that server moderators can efficiently manage and address user queries, issues, and feedback.
 
 ## Commands
 
@@ -33,7 +33,7 @@ Snippets consist of predefined text templates identified by a name and correspon
 	<DiscordMessage profile="nziie">
 		&gt;snippet thanks
 	</DiscordMessage>
-  <DiscordMessage profile="sentry">
+  <DiscordMessage profile="ServerPal">
     <DiscordEmbed slot="embeds" color="#5865f2" author-name="vNziie-- (@nziie.dev)" author-image="https://r.nziie.xyz/logo" footer-text="Anonymous Staff Reply">
       <DiscordEmbedDescription slot="description">
         Thanks for contacting support staff! We hope you had a good experience and that we full-filled your request.<br/><br/>This thread will close in **10 minutes**. Please note that replying to this message will cancel the timed closure. **Please only reply to this message if you need more help**.
@@ -46,26 +46,26 @@ Snippets consist of predefined text templates identified by a name and correspon
 </DiscordMessages>
 
 ## Deleting Replies {#deleting-replies}
-To eliminate any users thinking they were ghost direct messaged by Sentry, deleted modmail replies will look like the following in the user's DMs, but the message will be deleted in the thread channel.
+To eliminate any users thinking they were ghost direct messaged by ServerPal, deleted modmail replies will look like the following in the user's DMs, but the message will be deleted in the thread channel.
 
 <DiscordMessages>
-<DiscordMessage profile="sentry">
+<DiscordMessage profile="ServerPal">
   <DiscordEmbed slot="embeds" color="#2ecc71" author-name="Anonymous Reply" author-image="https://cdn.discordapp.com/embed/avatars/0.png" footer-text="Anonymous Staff Reply">
   <DiscordEmbedDescription slot="description"><DiscordItalic>This message has been deleted by the server's staff team, and cannot be viewed.</DiscordItalic></DiscordEmbedDescription>
-  <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/sentry-logo">
-  <p style={{'padding-top': '20px'}}>From Sentry Support • Today at 10:01 AM</p>
+  <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/ServerPal-logo">
+  <p style={{'padding-top': '20px'}}>From ServerPal Support • Today at 10:01 AM</p>
   </DiscordEmbedFooter>
   </DiscordEmbed>
   </DiscordMessage>
 </DiscordMessages>
 
 ## Logging
-Sentry will log all closed modmail threads if a channel is set for the **Log Channel** configuration in the `>settings` then **Modmail** menu. Web-logging uses [logs.discord.website](https://logs.discord.website) for Discord-like log visualizing.
+ServerPal will log all closed modmail threads if a channel is set for the **Log Channel** configuration in the `>settings` then **Modmail** menu. Web-logging uses [logs.discord.website](https://logs.discord.website) for Discord-like log visualizing.
 
 Here is what log entries look like.
 
 <DiscordMessages>
-  <DiscordMessage profile="sentry">
+  <DiscordMessage profile="ServerPal">
     <DiscordEmbed slot="embeds" color="#5865f2">
       <DiscordEmbedDescription slot="description">
         <h2>Thread Log</h2>
@@ -119,7 +119,7 @@ Here is an example of how a thread would look.
 	<i>User</i> created a modmail thread.
   </DiscordSystemMessage>
   <hr/>
-  <DiscordMessage profile="sentry">
+  <DiscordMessage profile="ServerPal">
     <DiscordEmbed slot="embeds" color="#5865f2" author-name="Created by @user50131" author-image="https://cdn.discordapp.com/embed/avatars/2.png" thumbnail="https://cdn.discordapp.com/embed/avatars/2.png" footer-text="Anonymous Staff Reply">
       <DiscordEmbedDescription slot="description">
         <DiscordMention>User</DiscordMention> was created <DiscordTime>a year ago</DiscordTime>, and joined the server <DiscordTime>6 months ago</DiscordTime>.
@@ -138,7 +138,7 @@ Here is an example of how a thread would look.
 	<DiscordMessage profile="nziie">
 		&gt;snippet hello
 	</DiscordMessage>
-  <DiscordMessage profile="sentry">
+  <DiscordMessage profile="ServerPal">
     <DiscordEmbed slot="embeds" color="#2ecc71" author-name="vNziie-- (@nziie.dev)" author-image="https://r.nziie.xyz/logo" footer-text="Anonymous Staff Reply">
       <DiscordEmbedDescription slot="description">Hello, how can we assist you today?</DiscordEmbedDescription>
     <DiscordEmbedFooter slot="footer">
@@ -154,37 +154,37 @@ Here is an example of how a thread would look.
 <DiscordMessage profile="user">
 hello
 </DiscordMessage>
-<DiscordMessage profile="sentry">
+<DiscordMessage profile="ServerPal">
   <DiscordReply slot="reply" profile="user">
   i would like to apply for staff
   </DiscordReply>
       <DiscordEmbed slot="embeds" color="#2ecc71">
-      <DiscordEmbedDescription slot="description"><h2><DiscordCustomEmoji name="check" url="/img/check.png" /> Thread Created</h2><DiscordQuote>Successfully created your thread (<code>#Dd3PfQBVDR</code>) in <DiscordBold>Sentry Support!</DiscordBold></DiscordQuote></DiscordEmbedDescription>
+      <DiscordEmbedDescription slot="description"><h2><DiscordCustomEmoji name="check" url="/img/check.png" /> Thread Created</h2><DiscordQuote>Successfully created your thread (<code>#Dd3PfQBVDR</code>) in <DiscordBold>ServerPal Support!</DiscordBold></DiscordQuote></DiscordEmbedDescription>
     <DiscordEmbedFooter slot="footer">
     <!-- Fix no bottom of embed -->
     <span>‎</span>
     </DiscordEmbedFooter>
     </DiscordEmbed>
 </DiscordMessage>
-<DiscordMessage profile="sentry">
+<DiscordMessage profile="ServerPal">
   <DiscordEmbed slot="embeds" color="#2ecc71" author-name="Anonymous Reply" author-image="https://cdn.discordapp.com/embed/avatars/0.png" footer-text="Anonymous Staff Reply">
     <DiscordEmbedDescription slot="description">Hello, how can we assist you today?</DiscordEmbedDescription>
-  <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/sentry-logo">
-  <p style={{'padding-top': '20px'}}>From Sentry Support • Today at 10:01 AM</p>
+  <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/ServerPal-logo">
+  <p style={{'padding-top': '20px'}}>From ServerPal Support • Today at 10:01 AM</p>
   </DiscordEmbedFooter>
   </DiscordEmbed>
   </DiscordMessage>
 <DiscordMessage profile="user">
 i would like to apply for staff
 </DiscordMessage>
-<DiscordMessage profile="sentry">
+<DiscordMessage profile="ServerPal">
   <DiscordReply slot="reply" profile="user">
     i would like to apply for staff
   </DiscordReply>
       <DiscordEmbed slot="embeds" color="#5865f2" author-name="Are you sure you'd like to send?">
       <DiscordEmbedDescription slot="description"><DiscordQuote>i would like to apply for staff</DiscordQuote></DiscordEmbedDescription>
-    <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/sentry-logo">
-    <p style={{'padding-top': '20px'}}>Press "Change Server" to change thread<br/>Selected thread: Sentry Support</p>
+    <DiscordEmbedFooter slot="footer" footer-image="https://r.nziie.xyz/ServerPal-logo">
+    <p style={{'padding-top': '20px'}}>Press "Change Server" to change thread<br/>Selected thread: ServerPal Support</p>
     </DiscordEmbedFooter>
     </DiscordEmbed>
   <DiscordAttachments slot="components">

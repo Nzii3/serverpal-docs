@@ -23,12 +23,12 @@ If you are on mobile, you can scroll horizontally to view the entire table.
 
 Usage   | Description | Aliases | Has slash command?
 --- | --- | --- | --- |
-`>help` | Shows Sentry's help menu | - | ✅
+`>help` | Shows ServerPal's help menu | - | ✅
 `>prefix` | See the server's current prefix | - | ❌
 `>settings` | Setup the bot and manage server-specific settings | `config`, `s` | ❌
 `>stats` | Gets statistics for the bot | - | ❌
 `>shards` | Bot shards and there respective info | - | ❌
-`>premium` | See information about Sentry+ (premium) | `upgrade` | ✅
+`>premium` | See information about ServerPal+ (premium) | `upgrade` | ✅
 
 
 ## Moderation Commands

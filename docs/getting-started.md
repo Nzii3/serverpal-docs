@@ -1,6 +1,6 @@
 ---
 title: 🚀 Getting Started
-description: Getting started with Sentry.
+description: Getting started with ServerPal.
 sidebar_position: 1
 unlisted: true
 ---
@@ -9,14 +9,14 @@ import { DiscordTime, DiscordBold, DiscordItalic, DiscordUnderlined, DiscordInli
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 ## Setup
-Use the <mention>/settings</mention> command command to have an easy setup solution. Sentry will make sure it has the correct permissions in the server to operate. The bot will alert you of any permissions that are missing.
+Use the <mention>/settings</mention> command command to have an easy setup solution. ServerPal will make sure it has the correct permissions in the server to operate. The bot will alert you of any permissions that are missing.
 
 
 ## Permits (Permissions) {#permissions}
 Permits allow you to confidently manage permissions for specific roles. You can assign permissions to a permit and assign roles to said permit. 
 
 :::warning
-Sentry uses a strict permits only system for use of it's commands. Therefore, if a user has Discord permissions for a command (such as kick members), they will still need to have a role with a permit that has the kick members permission.
+ServerPal uses a strict permits only system for use of it's commands. Therefore, if a user has Discord permissions for a command (such as kick members), they will still need to have a role with a permit that has the kick members permission.
 
 > **Server administrators are the only users that bypass any permission.**
 :::
@@ -51,5 +51,5 @@ Sentry uses a strict permits only system for use of it's commands. Therefore, if
 ## Success
 
 :::success 
-Your server is now setup with **Sentry**! If you would like to view Sentry's list of commands, you can do so on the 
+Your server is now setup with **ServerPal**! If you would like to view ServerPal's list of commands, you can do so on the 
 :::
