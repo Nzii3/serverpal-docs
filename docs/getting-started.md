@@ -9,13 +9,8 @@ import { DiscordTime, DiscordBold, DiscordItalic, DiscordUnderlined, DiscordInli
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 ## Setup
-Use the `>setup` command command to have an easy setup solution. Sentry will make sure it has the correct permissions in the server to operate. The bot will alert you of any permissions that are missing.
+Use the <mention>/settings</mention> command command to have an easy setup solution. Sentry will make sure it has the correct permissions in the server to operate. The bot will alert you of any permissions that are missing.
 
-<DiscordMessages>
-	<DiscordMessage profile="sentry">
-		Hello, I'm <DiscordMention>Sentry</DiscordMention>! Feel free to use <code>>help</code> for more information about my features.
-	</DiscordMessage>
-</DiscordMessages>
 
 ## Permits (Permissions) {#permissions}
 Permits allow you to confidently manage permissions for specific roles. You can assign permissions to a permit and assign roles to said permit. 
@@ -28,32 +23,28 @@ Sentry uses a strict permits only system for use of it's commands. Therefore, if
 
 
 ### Configuring {#configuring-permits}
-1. Use the `>settings` command and navigate to the <span class="badge badge--primary">Permits</span> tab using the dropdown. 
+1. Use the <mention>/settings</mention> command and navigate to the <span class="badge badge--primary">Permits</span> tab using the dropdown. 
 
 2. On the permits page, you will see all pre-defined levels of permits, their (customizable) assigned permissions, and their (customizable) assigned roles. Any role listed attached to a permit can use any command that requires the attached permisisons. The permissions should be pretty straight forward to what commands they relate to. 
 
-<details className="customdetails">
+<details className="customdetails" open>
 <summary>🔑 Permissions Key</summary>
 
-**Manage Cases** <span style={{'color': '#5865f2'}}>→</span> `>case` and `>cases`. Can edit/delete cases.
+**Manage Cases** <span style={{'color': '#5865f2'}}>→</span> <mention>/case</mention> and <mention>/cases</mention>. Can edit/delete cases.
 
 **Manage Application Responses** <span style={{'color': '#5865f2'}}>→</span> *Can accept and deny application responses.*
 
-**Manage Modmail Threads** <span style={{'color': '#5865f2'}}>→</span> `>reply`, `>areply`, `>close`, *and thread related commands. Can manage modmail threads.*
+**Warn Members** <span style={{'color': '#5865f2'}}>→</span> <mention>/warn</mention>, can use any severity
 
-**Manage Appeals** <span style={{'color': '#5865f2'}}>→</span> *Can accept, deny, and ignore appeals, full control over appeals.* **(coming soon)**
+**Mute Members** <span style={{'color': '#5865f2'}}>→</span> <mention>/mute</mention> and <mention>/unmute</mention>.
 
-**Warn Members** <span style={{'color': '#5865f2'}}>→</span> `>warn`, can use any severity
+**Kick Members** <span style={{'color': '#5865f2'}}>→</span> <mention>/kick</mention>
 
-**Mute Members** <span style={{'color': '#5865f2'}}>→</span> `>mute` and `>unmute`.
+**Ban Members** <span style={{'color': '#5865f2'}}>→</span> <mention>/ban</mention> and <mention>/unban</mention>
 
-**Kick Members** <span style={{'color': '#5865f2'}}>→</span> `>kick`
+**Manage Lockdown** <span style={{'color': '#5865f2'}}>→</span> <mention>/lockdown</mention> **(coming soon)**
 
-**Ban Members** <span style={{'color': '#5865f2'}}>→</span> `>ban` and `>unban`
-
-**Manage Lockdown** <span style={{'color': '#5865f2'}}>→</span> `>lockdown` **(coming soon)**
-
-**Full Control** <span style={{'color': '#5865f2'}}>→</span> *This is a dangerous to give, as they have full control over settings and all commands.*
+**Full Control** <span style={{'color': '#5865f2'}}>→</span> *Gives full control over settings and all commands.*
 
 </details>
 

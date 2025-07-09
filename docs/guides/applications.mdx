@@ -4,6 +4,8 @@ unlisted: true
 ---
 
 import { DiscordTime, DiscordBold, DiscordItalic, DiscordUnderlined, DiscordInlineCode, DiscordSpoiler, DiscordQuote, DiscordActionRow, DiscordAttachment, DiscordAttachments, DiscordButton, DiscordCommand, DiscordEmbed, DiscordEmbedField, DiscordEmbedFields, DiscordEmbedDescription, DiscordEmbedFooter, DiscordInvite, DiscordMention, DiscordMessage, DiscordMessages, DiscordReaction, DiscordReactions, DiscordReply, DiscordSystemMessage, DiscordTenorVideo, DiscordThread, DiscordThreadMessage, DiscordCustomEmoji } from "@skyra/discord-components-react";
+import '../../src/discordConfig.ts'; // This loads the config before using components
+
 
 Sentry's application introduces unique and unprecedented functionalities for designing, overseeing, and gauging user interactions within application systems. It offers **various question formats**, including **multiple-choice options**, **yes/no responses**, **long text**, **short text**, and more. Sentry empowers you with complete authority over application creation, allowing for extensive customization as per your needs.
 
@@ -11,31 +13,31 @@ Sentry's application introduces unique and unprecedented functionalities for des
 :::tip
 If you're on mobile, you can scroll horizontally to view the entire table.
 :::
-Usage   | Description | Aliases | Has slash command?
---- | --- | --- | --- |
-`>applications create <name>` | Create an application for the server, shows the application editor. | `apps create` | ❌
-`>applications edit [name]` | Edit an existing application in the server, shows the application editor. If a name isn't provided, a menu will popup with names of all existing applications. | `apps edit` | ❌
-`>applications delete [name]` | Delete an existing application in the server. If a name isn't provided, a menu will popup with names of all existing applications. | `apps delete` | ❌
-`>apply [name]` | Submit (apply for) an application in the server. If a name isn't provided, a menu will popup with names of all enabled applications. | - | ❌
+Usage   | Description | Premium |
+--- | --- | --- |
+<mention>/applications create</mention> | Create an application for the server, shows the application editor. | ❌
+<mention>/applications edit</mention> | Edit an existing application in the server, shows the application editor. If a name isn't provided, a menu will popup with names of all existing applications.  | ❌
+<mention>/applications delete</mention> | Delete an existing application in the server. If a name isn't provided, a menu will popup with names of all existing applications.  | ❌
+<mention>/apply</mention> | Submit (apply for) an application in the server. If a name isn't provided, a menu will popup with names of all enabled applications. | ❌
 
 <DiscordMessages>
-	<DiscordMessage>
-		&gt;apply Moderation Team
-	</DiscordMessage>
-  <DiscordMessage author="Sentry" avatar="https://r.nziie.xyz/sentry-logo" bot verified>
-    <DiscordEmbed slot="embeds" color="#5865f2">
-      <DiscordEmbedDescription slot="description">
-        Application process has started in your direct messages.
-      </DiscordEmbedDescription>
-      </DiscordEmbed>
-      <DiscordAttachments slot="components">
-        <DiscordActionRow>
-          <DiscordButton url="https://nziie.xyz/video">
-            Go to message
-          </DiscordButton>
-        </DiscordActionRow>
-      </DiscordAttachments>
-  </DiscordMessage>
+
+					<DiscordMessage profile="serverpal" ephemeral>
+						<DiscordCommand slot="reply" command="/apply"></DiscordCommand>
+              <DiscordEmbed slot="embeds" color="#5865f2">
+                <DiscordEmbedDescription slot="description">
+                  Application process has started in your direct messages.
+                </DiscordEmbedDescription>
+                </DiscordEmbed>
+                <DiscordAttachments slot="components">
+                  <DiscordActionRow>
+                    <DiscordButton url="https://nziie.xyz/video">
+                      Go to message
+                    </DiscordButton>
+                  </DiscordActionRow>
+                </DiscordAttachments>
+					</DiscordMessage>
+
 </DiscordMessages>
 
 ## Question Types

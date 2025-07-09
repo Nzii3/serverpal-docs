@@ -1,12 +1,16 @@
 import React from 'react';
 import classnames from 'classnames';
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/youtube';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import styles from './index.module.css';
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultLayout from '../layouts/DefaultLayout';
+import { DiscordTime, DiscordBold, DiscordItalic, DiscordUnderlined, DiscordInlineCode, DiscordSpoiler, DiscordQuote, DiscordActionRow, DiscordAttachment, DiscordAttachments, DiscordButton, DiscordCommand, DiscordEmbed, DiscordEmbedField, DiscordEmbedFields, DiscordEmbedDescription, DiscordEmbedFooter, DiscordInvite, DiscordMention, DiscordMessage, DiscordMessages, DiscordReaction, DiscordReactions, DiscordReply, DiscordSystemMessage, DiscordTenorVideo, DiscordThread, DiscordThreadMessage, DiscordCustomEmoji } from "@skyra/discord-components-react";
+
 
 const features = [
   {
@@ -71,7 +75,7 @@ function Feature({imageUrl, title, description}: FeatureArgs) {
           <img className={classnames('padding-vert--md', styles.featureImage)} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       {description}
     </div>
   );
@@ -109,12 +113,26 @@ function Home() {
       </header>
       <main>
         <hr style={{'backgroundColor': '#5afc85', 'opacity': '100%'}}/>
-        {/* <div className="container">
+        <div className="container">
             <div className={classnames(`${styles.pitch}`)}>
-              <h1 className="text--center">Sentry's Features</h1>
+            {features && features.length && (
+              <section className={styles.features}>
+                <div className="container margin-vert--md">
+                  <div className="row">
+                    {features.map((props, idx) => (
+                      <Feature key={idx} {...props} />
+                    ))}
+                  </div>
+                </div>
+              </section>
+            )}
+              {/* <h1 className="text--center">ServerPal Features</h1>
                 <Tabs className="tabs tabs--block">
                     <TabItem value="Moderation">
-                      Sentry's customizable moderation system gives you all the power you need to moderate your server, or allow other moderators to do so seamlessly.
+                      ServerPal's customizable moderation system gives you all the power you need to manage your server efficiently—or delegate responsibilities to trusted moderators with ease. With flexible role-based permissions and fine-tuned controls, ServerPal adapts to your community’s needs, whether you're running a small group or a large-scale server.
+                      <br/>
+                      <br/>
+                      Beyond the basics, ServerPal introduces Mod Points—a dynamic system that tracks user infractions like warns, mutes, kicks, and bans. When a user accumulates a certain number of mod points, you can set up custom punishments to be triggered automatically. From temporary mutes to escalating bans or even assigning specific roles, these punishments ensure consistent and fair enforcement without manual oversight. With ServerPal, your moderation isn't just powerful—it's smart, automated, and uniquely yours.
                       <br />
                       <br />
                       <DiscordMessages>
@@ -129,20 +147,9 @@ function Home() {
                   <TabItem value="Applications">
                     Sentry's application introduces unique and unprecedented functionalities for designing, overseeing, and gauging user interactions within application systems. It offers various question formats, including multiple-choice options, yes/no responses, long text, short text, and more. Sentry empowers you with complete authority over application creation, allowing for extensive customization as per your needs.
                   </TabItem>
-                </Tabs>
+                </Tabs> */}
             </div>
-        </div> */}
-        {/* {features && features.length && (
-          <section className={styles.features}>
-            <div className="container margin-vert--md">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )} */}
+        </div>
         <section>
           <div className="container">
             <div className="row">

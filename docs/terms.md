@@ -9,7 +9,7 @@ By utilizing our bot or any other services provided by us, you hereby acknowledg
 
 1. Under no circumstances may the bot be used in contravention of [Discord's Terms of Service](https://discord.com/terms) or [Discord's Community Guidelines](https://discord.com/guidelines).
 2. The bot is offered on an "as is" basis and shall not be altered to meet individual user expectations or requirements.
-3. We retain the right to remove your server's partner configurations at any time if they violate the rights of any individual or are deemed to be offensive or inappropriate in any manner.
+3. We retain the right to remove your server's configurations at any time if they violate the rights of any individual or are deemed to be offensive or inappropriate in any manner.
 4. Engaging in the use of multiple servers to promote a single server will result in the permanent blacklisting of the server(s) involved.
 5. Engaging in the act of spamming broken or malfunctioning commands will result in the permanent blacklisting of the server(s) involved.
 6. In the event that you have violated the Terms of Service while possessing premium features (obtained through giveaways, boosting, etc.), you shall be blacklisted from accessing our bot.
