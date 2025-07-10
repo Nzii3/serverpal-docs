@@ -31,14 +31,14 @@ function Community() {
                 <FontAwesomeIcon icon="fa-solid fa-gem" style={{'fontSize': '3em'}} bounce />
                 </div>
                 <div className="card__header">
-                <h2>1 Month Subscription ($3.99/month)</h2>
+                <h2>1 Month Subscription ($2.99/month)</h2>
                 </div>
                 <div className="card__body">
                   <ul style={{'listStylePosition': 'inside'}}>
-                  <li>Lower cooldowns for commands</li>
-                  <li>Increased applications questions limit</li>
+                  <li>Message customization for the advertisement moderation extension</li>
                   <li>7 custom button actions instead of 3</li>
                   <li>7 custom menu option actions instead of 3</li>
+                  <li>Application questions limit increased</li>
                   <li>Other increased limits</li>
                   <li><a href="/support">Premium support</a></li>
                   </ul>
