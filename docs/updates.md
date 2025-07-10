@@ -6,15 +6,16 @@ title: 📢 Updates
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Check out our [Clickup Roadmap](https://sharing.clickup.com/36041748/l/h/6-900902486041-1/c850810baf29f0f) to see new and upcoming features!
+*Original features came from Sentry, previous branding.*
 
-## v1.0.0 <span className="badge badge--primary">LATEST</span> {#v1.0.0}
-Released [9/22/2024](./updates.md)
+## v2.0.0 <span className="badge badge--primary">LATEST</span> {#v2.0.0}
+Released [7/9/2025](./updates.md)
 
 <Tabs>
   <TabItem value="added" label="Added (1)" default>
-  - v1.0.0 Release
+  - Rewritten to slash commands, from prefix commands.
   </TabItem>
-  <TabItem value="fixed" label="Fixed (0)">
+  <TabItem value="removed" label="Removed (1)">
+  - Server Modmail
   </TabItem>
 </Tabs>
