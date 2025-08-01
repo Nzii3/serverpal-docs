@@ -244,6 +244,7 @@ html[data-theme='dark'] .DocSearch {
   content: "beta";
   color: #ffffff;
   border-color: var(--ifm-color-info);
+  width: 3rem;
 }
 
 .icon > .menu__link {
